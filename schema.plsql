@@ -284,3 +284,61 @@ grant roleNHANVIEN to NV004;
 grant roleNHANVIEN to NV005;
 
 grant create session to roleNHANVIEN;
+
+--Du lieu cho cac bang
+--CHINHANH 
+INSERT INTO CHINHANH VALUES ('CN001', N'TP. Hồ Chí Minh', 'TCN001');
+INSERT INTO CHINHANH VALUES ('CN002', N'Hà Nội', 'TCN002');
+INSERT INTO CHINHANH VALUES ('CN003', N'Đà Nẵng', 'TCN003');
+INSERT INTO CHINHANH VALUES ('CN004', N'Cần Thơ', 'TCN004');
+INSERT INTO CHINHANH VALUES ('CN005', N'Hải Phòng', 'TCN005');
+
+--CHITIEU
+EXEC sp_insert_encrypt_CHITIEU ('CT001', N'In khảo sát', 1000, 'DA001');;
+EXEC sp_insert_encrypt_CHITIEU ('CT002', N'Gọi điện cho ứng viên', 500, 'DA002');
+EXEC sp_insert_encrypt_CHITIEU ('CT003', N'Kiểm định giờ làm', 400, 'DA003');
+EXEC sp_insert_encrypt_CHITIEU ('CT004', N'Phân tích kiểm định sản phẩm', 500, 'DA004');
+EXEC sp_insert_encrypt_CHITIEU ('CT005', N'Thuê công ty kiểm toán', 500, 'DA005');
+
+--NHANVIEN
+exec sp_insert_encrypt_NHANVIEN ('TDA001', N'Trần Ngọc Việt', N'123 Ung Văn Khiêm', '0123456789', 'TDA001@gmail.com', 'PCSKH', 'CN001', '5000');
+exec sp_insert_encrypt_NHANVIEN ('TDA002', N'Kim Tuấn Tú', N'115 Nguyễn Kiệm', '0123456789', 'TDA002@gmail.com', 'PKH', 'CN002', 5100);
+exec sp_insert_encrypt_NHANVIEN ('TDA003', N'Vương Khải Hoành', N'451 Lê Văn Sĩ', '0123456789', 'TDA003@gmail.com', 'PKT', 'CN003', 5200);
+exec sp_insert_encrypt_NHANVIEN ('TDA004', N'Lưu Hạo Nhân', N'127 Đinh Tiên Hoàng', '0123456789', 'TDA004@gmail.com', 'PNS', 'CN004', 5300);
+exec sp_insert_encrypt_NHANVIEN ('TDA005', N'Phạm Minh Hoàng', N'54 Phan Đăng Lưu', '0123456789', 'TDA005@gmail.com', 'PKDCL', 'CN005', 5400);
+exec sp_insert_encrypt_NHANVIEN ('TP001', N'Đoàn Ngọc Lân', N'1Bis Pasteur', '0123456789', 'TP001@gmail.com', 'PCSKH', 'CN001', 6000);
+exec sp_insert_encrypt_NHANVIEN ('TP002', N'Trịnh Sang Sang', N'45 Võ Thị Sáu', '0123456789', 'TP002@gmail.com', 'PKH', 'CN002', 6500);
+exec sp_insert_encrypt_NHANVIEN ('TP003', N'Nguyễm Chí Nhân', N'30 Trần Phú', '0123456789', 'TP003@gmail.com', 'PKT', 'CN003', 6900);
+exec sp_insert_encrypt_NHANVIEN ('TP004', N'Trần Minh Hạo', N'12 Nguyễn Văn Cừ', '0123456789', 'TP004@gmail.com', 'PNS', 'CN004', 6400);
+exec sp_insert_encrypt_NHANVIEN ('TP005', N'Lưu Bội Bội', N'67 Hoàng Hoa Thám', '0123456789', 'TP005@gmail.com', 'PKDCL', 'CN005', 6700);
+exec sp_insert_encrypt_NHANVIEN ('TCN001', N'Bối Vy Vy', N'73 Hoàng Văn Thụ', '0123456789', 'TCN001@gmail.com', 'PCSKH', 'CN001', 4000);
+exec sp_insert_encrypt_NHANVIEN ('TCN002', N'Tiêu Nại', '82 Phan Đình Phùng', '0123456789', 'TCN002@gmail.com', 'PKH', 'CN002', 4600);
+exec sp_insert_encrypt_NHANVIEN ('TCN003', N'Doãn Minh', N'42 Trần Huy Liệu', '0123456789', 'TCN003@gmail.com', 'PKT', 'CN003', 5000);
+exec sp_insert_encrypt_NHANVIEN ('TCN004', N'Diệp Nhật Thi', N'503 Trần Quang Diệu', '0123456789', 'TCN004@gmail.com', 'PNS', 'CN004', 4800);
+exec sp_insert_encrypt_NHANVIEN ('TCN005', N'Tống An Thần', N'134 Nguyễn Văn Trỗi', '0123456789', 'TCN005@gmail.com', 'PKDCL', 'CN005', 4900);
+exec sp_insert_encrypt_NHANVIEN ('NV001', N'Lâm Minh Vỹ', N'113 Huỳnh Văn Bánh', '0123456789', 'NV001@gmail.com', 'PCSKH', 'CN001', 3000);
+exec sp_insert_encrypt_NHANVIEN ('NV002', N'Châu Gia Thành', N'387 Nguyễn Văn Đậu', '0123456789', 'NV002@gmail.com', 'PKH', 'CN002', 3100);
+exec sp_insert_encrypt_NHANVIEN ('NV003', N'Tùy Phát', N'256 Nguyễn Thị Minh Khai', '0123456789', 'NV003@gmail.com', 'PKT', 'CN003', 3200);
+exec sp_insert_encrypt_NHANVIEN ('NV004', N'Mạc Thị Hân', N'467 Trương Định', '0123456789', 'NV004@gmail.com', 'PNS', 'CN004', 3500);
+exec sp_insert_encrypt_NHANVIEN ('NV005', N'Cát Tường', N'245 Võ Văn Tần', '0123456789', 'NV005@gmail.com', 'PKDCL', 'CN005', 3300);
+
+--PHANCONG
+EXEC sp_insert_encrypt_PHANCONG ('NV001', 'DA001', N'Thu thập báo cáo', 100);
+EXEC sp_insert_encrypt_PHANCONG ('NV002', 'DA002', N'Gọi điện cho các ứng cử viên dưới 25 tuổi ở TP HCM', 200);
+EXEC sp_insert_encrypt_PHANCONG ('NV003', 'DA003', N'Phân tích số liệu làm việc của nhân viên', 300);
+EXEC sp_insert_encrypt_PHANCONG ('NV004', 'DA004', N'Phân tích mẫu sản phẩm', 400);
+EXEC sp_insert_encrypt_PHANCONG ('NV005', 'DA005', N'Tổng kết các số liệu kế toán', 500);
+
+--PHONGBAN
+INSERT INTO PHONGBAN VALUES ('PCSKH', N'Chăm sóc khách hàng', 'TP001', TO_DATE('08-08-2016','MM-DD-YYYY'), 1, 'CN001');
+INSERT INTO PHONGBAN VALUES ('PKH', N'Kế hoạch', 'TP002', TO_DATE('01-01-2013','MM-DD-YYYY'), 1, 'CN002');
+INSERT INTO PHONGBAN VALUES ('PKT', N'Kế toán', 'TP003', TO_DATE('02-07-2013','MM-DD-YYYY'), 1, 'CN003');
+INSERT INTO PHONGBAN VALUES ('PNS', N'Nhân sự', 'TP004', TO_DATE('07-01-2014','MM-DD-YYYY'), 1, 'CN004');
+INSERT INTO PHONGBAN VALUES ('PKDCL', N'Kiểm định chất lượng', 'TP005', TO_DATE('05-03-2007','MM-DD-YYYY'), 1, 'CN005');
+
+--DUAN
+INSERT INTO DUAN VALUES ('DA001', N'Rà soát thị trường', 10000, 'PKH', 'TDA001');
+INSERT INTO DUAN VALUES ('DA002', N'Tuyển nhân viên 2017', 1000, 'PNS', 'TDA002');
+INSERT INTO DUAN VALUES ('DA003', N'Kế hoạch tăng lương', 100000, 'PKT', 'TDA003');
+INSERT INTO DUAN VALUES ('DA004', N'Nghiên cứu sản phẩm mới', 2000, 'PKDCL', 'TDA004');
+INSERT INTO DUAN VALUES ('DA005', N'Kiểm kê tài chính 2017', 1200, 'PKT', 'TDA005');
