@@ -27,6 +27,10 @@ Yêu cầu **bắt buộc**
 * [x] Chỉ trưởng dự án được phép xem và cập nhật thông tin chi tiêu của dự án của mình. (**1412053**)
 * [x] Xây dựng giải pháp cho phép trưởng dự án mã hóa thông tin chi tiêu của dự án của mình và chỉ cho phép một số người dùng nhất định giải mã thông tin này. (**1412053**)
 
+**Lưu ý:** Để làm được yêu cầu 2, 3 cần cài đặt DidiSoft ORA_RSA PL/SQL package. 
+* Link download: https://www.didisoft.com/ora-rsa/
+* Hướng dẫn cài đặt: https://www.didisoft.com/ora-rsa/tutorial/setup/
+
 Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 * [ ] Chức năng 1
 * [ ] Chức năng 2
