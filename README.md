@@ -1,6 +1,6 @@
-# BT-ATBMHTTT-2 - *Name of your app*
+# BT-ATBMHTTT-2 - *Quản lý Dự án*
 
-**Name of your app** là một bài tập 2 tại môn ATBMHTTT. Bài tập yêu cầu sinh viên tạo cơ sở dữ liệu, mã hóa theo các yêu cầu.
+**Quản lý Dự án** là một bài tập 2 tại môn ATBMHTTT. Bài tập yêu cầu sinh viên tạo cơ sở dữ liệu, mã hóa theo các yêu cầu.
 
 Thành viên:
 * [x] **1412007** Lê Mỹ Anh (1412007)
